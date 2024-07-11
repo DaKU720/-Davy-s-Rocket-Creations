@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Play', Arial, sans-serif; /* Applying Google Font Play */
+    background-color: #1d1f2e;
+    color: rgb(218, 218, 218);
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 300px;  /* Change this to adjust the logo size */
+   /*  height: 200px; Change this to adjust the logo size */
+    margin-bottom: 20px;
+}
+
+.headline {
+    margin: 10px 0;
+    font-size: 24px; /* Change this to adjust the headline size */
+    font-weight: 700; /* Applying bold font weight */
+}
+
+.loading {
+    margin: 20px auto;
+    border: 5px solid rgba(255, 255, 255, 0.5); /* Light grey */
+    border-top: 5px solid white;
+    border-radius: 50%;
+    width: 30px;  /* Change this to adjust the loading mark size */
+    height: 30px; /* Change this to adjust the loading mark size */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 16px; /* Change this to adjust the description size */
+    color: rgba(255, 255, 255, 0.8); /* Light grey */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+    border-color: #555;
+}
